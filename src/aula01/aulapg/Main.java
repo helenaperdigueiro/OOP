@@ -10,11 +10,14 @@ public class Main {
         //Temos que chamar os metodos sempre aqui dentro
 
         int valor1=15;
-        int valor2=2;
-        float quociente;
-        quociente= valor1/(float)valor2;
-        System.out.println(quociente);
+        float banana;
+        banana = (float)valor1/2; //casting = transformar em float momentaneamente.
+        System.out.println(banana);
         //soh testando os exemplos do pg
+//        let nomeDaVariavel = "Hello world!";
+        String nomeDaVariavel = "Hello world!";
+        int nomeDaVarialvel2 = 10;
+
     }
     public static String showMessage() { //quando coloquei String eu disse que esse metodo chamado showMessage vai retornar uma string.
         String myMessage = "Hello world inside a method!"; //criei uma variavel do tipo String.

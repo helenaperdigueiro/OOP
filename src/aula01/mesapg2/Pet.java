@@ -1,4 +1,4 @@
-package aula01.mesapg;
+package aula01.mesapg2;
 
 public class Pet {
     String type;

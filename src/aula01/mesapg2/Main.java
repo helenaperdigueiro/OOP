@@ -1,4 +1,4 @@
-package aula01.mesapg;
+package aula01.mesapg2;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +25,7 @@ public class Main {
             petAgeMessage = "is " + pet.age + " years old";
         }
 
-        System.out.println(String.format("%s %s, %s, eats %s kg of food and does \'%s\'.", pet.name, petTypeMessage, petAgeMessage, pet.foodQuantity, pet.sound));
+        System.out.println(String.format("%s %s, %s, eats %s kg of food and does \'%s\'.",
+                pet.name, petTypeMessage, petAgeMessage, pet.foodQuantity, pet.sound));
     }
 }
