@@ -1,4 +1,4 @@
-package aula02.exmesa01;
+package aula02.exaulasincrona;
 
 import java.util.Scanner;
 
