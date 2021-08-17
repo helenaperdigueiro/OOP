@@ -1,4 +1,4 @@
-package aula01.mesapg2;
+package aula01.mesapg;
 
 public class Main {
     public static void main(String[] args) {
