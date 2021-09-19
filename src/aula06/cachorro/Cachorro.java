@@ -9,12 +9,7 @@ public class Cachorro {
     private boolean estaFerido;
     private String nome;
 
-    public Cachorro(String raca,
-                    int anoNascimento,
-                    float peso,
-                    boolean temChip,
-                    boolean estaFerido,
-                    String nome) {
+    public Cachorro(String raca, int anoNascimento, float peso, boolean temChip, boolean estaFerido, String nome) {
         this.raca = raca;
         this.anoNascimento = anoNascimento;
         this.peso = peso;
@@ -26,17 +21,18 @@ public class Cachorro {
         this.nome = nome;
         this.estaFerido = estaFerido;
     }
+
     public void colocarParaAdocao() {
         if(!this.estaFerido && this.peso > 5) {
-            estaParaAdocao = true;
+            this.estaParaAdocao = true;
         } else {
-            estaParaAdocao = false;
+            this.estaParaAdocao = false;
         }
     }
     public void adotar() {
-        if(estaParaAdocao) {
+        if(this.estaParaAdocao) {
             System.out.println("Parabens! Voce adotou um caozinho! =)");
-            estaParaAdocao = false;
+            this.estaParaAdocao = false;
         } else {
             System.out.println("Que pena! Este caozinho nao esta para adocao! =(");
         }
