@@ -6,10 +6,10 @@ import java.util.List;
 
 public class Student extends Person {
     private static int count = 0;
-    private ArrayList <Course> courses;
+    private List <Course> courses;
     private int id;
 
-    public Student(String name, String cpf, String phone, Gender gender, String email, Address address, ArrayList<Course> courses) {
+    public Student(String name, String cpf, String phone, Gender gender, String email, Address address, List<Course> courses) {
         super(name, cpf, phone, gender, email, address);
         this.courses = courses;
         this.id = ++count;
@@ -17,6 +17,10 @@ public class Student extends Person {
 
     public int getId() {
         return this.id;
+    }
+
+    public void addCourse(Course course) {
+        this.courses.add(course);
     }
 
     public String toString() {
