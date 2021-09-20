@@ -16,4 +16,28 @@ public class Person {
         this.email = email;
         this.address = address;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
 }

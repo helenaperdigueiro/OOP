@@ -17,4 +17,9 @@ public class Address {
         this.city = city;
         this.state = state;
     }
+
+    public String toString() {
+        return String.format("Logradouro: %s\nNúmero: %s\nComplemento: %s\nBairro: %s\nCEP: %s\nCidade: %s\nEstado: %s",
+                this.address, this.number, this.additionalInfo, this.neighborhood, this.cep, this.city, this.state);
+    }
 }

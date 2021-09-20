@@ -1,6 +1,8 @@
 package checkpointI;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Student extends Person {
     private static int count = 0;
@@ -15,5 +17,16 @@ public class Student extends Person {
 
     public int getId() {
         return this.id;
+    }
+
+    public String toString() {
+        return String.format("ID: %s\nNome: %s\nCPF: %s\nTelefone: %s\nSexo: %s\nEmail: %s\nEndereço:\n%s\nCursos: %s",
+                this.id, super.getName(), super.getCpf(), super.getPhone(), super.getGender().getAbbreviation(), super.getEmail(), super.getAddress(), getCoursesNames(this.courses));
+    }
+
+    private String getCoursesNames(List<Course> courses) {
+        List <String> coursesNames = new ArrayList<>();
+        courses.forEach(course -> coursesNames.add(course.getName()));
+        return Arrays.toString(coursesNames.toArray());
     }
 }
